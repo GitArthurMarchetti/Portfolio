@@ -1,0 +1,62 @@
+body {
+    height: 100%;
+     margin: 10px;
+   }
+ 
+ .fundo{
+     position: absolute;
+     margin: 0;
+     right: 0;
+     bottom: 0;
+     z-index: -1;
+     padding: 0;
+     justify-content: center;
+ }
+ 
+ 
+     .hud {
+         display: flex;
+         flex-direction: column;
+         margin: auto;
+         width: max-content;
+         justify-content: center;
+         border: 1px solid white;
+         border-radius: 10px;
+         height: max-content;
+         background-color: white;
+         box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.603), 5px 2px 3px rgba(0, 0, 0, 0.349);
+         padding: 50px;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-bottom: 10px;
+         flex-wrap: nowrap;
+     }
+ 
+.titulo{
+        font-size: 100px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .back{
+        display: flex;
+        justify-content: left;
+        opacity: 70%;
+        width: max-content;
+      }
+        .back:hover{
+            opacity: 100%;
+        }
+      #seta{
+        height: 50px;
+      }
+      #voltar{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        text-decoration: none
+      }
+    
+#cronograma{
+    height: 400px;
+    width: 800px;
+}
