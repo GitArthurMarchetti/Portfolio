@@ -1,176 +1,103 @@
-body {
-   height: 100vh;
-   width: 100vw;
-   overflow-y: hidden;
-   overflow-x: hidden;
-  }
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+}
 
 .fundo{
-    position: absolute;
     z-index: -1;
-    text-align: center;
-    align-self: center;
-    align-items: center;
-    align-content: center;
-}
-
-
-    .hud {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        background-color: rgba(255, 255, 255, 0);
-        box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.603), 5px 2px 3px rgba(0, 0, 0, 0.349);
-    }
-
-    .comeco{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        margin-top: 50px;
-        justify-content: space-between;
-        flex-direction: row;
-       justify-content:center;
-       height: max-content;
-       justify-content: space-between;
-       margin-top: 5%;
-    }
-
-.titulo{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    margin-right: 100px;
-    justify-content: center;
-    text-align: left;
-    color: white;
-    letter-spacing: 5px;
-    font-family: 'Bebas Neue', sans-serif;
+    flex-direction: row;
 }
-    h1 {
-        font-size: 90px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    #meunome{
-        font-size: 100px;
-        margin-top: 0%;
-        margin-bottom: 0%;
-    }
-    #meuNome:hover{
-        background-image: linear-gradient(99deg, red, blue);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        cursor:grab;
+.fundoVermelho{
+    background-color: #c00000;
+    height: 100vh;
+    width: 45vw;
+}
+.fundoPreto{
+    background-color: #242424;
+    height: 100vh;
+    width: 55vw;
+}
 
-    }
-    #meuNome:active{
-        cursor: grabbing;
-    }
-    h2{
-        font-size: 40px;
-        margin-top: 0%;
-        margin-bottom: 0%;
-       
-    }
-    h3{font-size: 40px;
-        margin-top: 0%;
-        margin-bottom: 0%;
+.hud{
+  border: white solid 2px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
-   
-   .fotoeicones{
+
+/* BOTOES */
+nav{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-   }
-    #minhaFoto {
-        height: 350px;
-        height: 300px;
-        justify-content: center;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.349), 0 6px 20px 0 rgba(0, 0, 0, 0.603);
-        margin-bottom: 20px;
-    }
-
-#github{
-    height: 60px;
-    opacity: 70%;
-}
-    #github:hover{
-        opacity: 100%;
-        cursor: pointer;
-    }
-
-#email{
-    height: 60px;
-    opacity: 70%;
-}
-    #email:hover{
-    opacity: 100%;
-    cursor: pointer;
-}
-
-   /* BOTOES  */
-nav {
-    display: flex;
-    margin-top: 2rem;
+    flex-direction: row;
     justify-content: flex-end;
-    justify-content: space-evenly;
-
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+a{
+  text-decoration: none;
+  color:wheat ;
 }
 
 .btnDesign{
-    font-family: 'Voltaire', sans-serif;
-    height: max-content;
-    width: max-content;
-    margin-left: 5px;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    background-color: none;
-    background: none;
-    border: none;
-}
-.btnDesign:hover {
-    background-image: linear-gradient(99deg, red, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: white;
+    margin-left: 6rem;
+    font-size: 1.5rem;
     cursor: pointer;
-}
-   
-
-
-h4 {
-    font-size: 50px;
-    margin: 20px;
-    margin-left: 30px;
-}
-   
-.icones {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-direction: row;
-   text-align: right;
-   margin-top: 5px;
-   
-}
-#github {height: 50px;margin: 0;padding: 0; opacity: 70%;}
-    #github:hover{opacity: 100%;}
-
-#linkedin {height: 50px; margin: 0; padding: 0; opacity: 70%; ;}
-    #linkedin:hover{opacity: 100%;}
-
-#email {height: 50px;margin: 0; padding: 0;opacity: 70%;}
-    #email:hover{opacity: 100%;}
-
-.fotoicones{display: flex;
-flex-direction: column;
-margin-right: 15px;}
-
-
-a{
-    height: max-content;
+    background: none;
     width: max-content;
+    height: max-content;
+    border: none;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    transition: all 2s;
+}  .btnDesign::before {
+    margin-left: auto;
+  }
+  
+  .btnDesign::after, button::before {
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: #c00000;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  .btnDesign:hover::after, button:hover::before {
+    width: 100%;
+  }
+
+
+.comeco{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo{
+    font-size: 3rem;
+    color:wheat ;
+}
+  
+.fotoeicones{
+    height: 100px;
+}
+
+#github{
+    height: 100px;
+}
+
+#email{
+    height: 100px;
 }
