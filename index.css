@@ -1,32 +1,28 @@
 body {
-   height: 100%;
-    margin: 10px;
+   height: 100vh;
+   width: 100vw;
+   overflow-y: hidden;
+   overflow-x: hidden;
   }
 
 .fundo{
     position: absolute;
-    margin: 0;
-    right: 0;
-    bottom: 0;
     z-index: -1;
-    padding: 0;
-    justify-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
 }
 
 
     .hud {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        height: 100%;
         margin: auto;
-        width: max-content;
-        justify-content: center;
-        border: 1px solid white;
-        border-radius: 10px;
-        height: max-content;
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0);
         box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.603), 5px 2px 3px rgba(0, 0, 0, 0.349);
-        padding: 50px;
-        padding-bottom: 10px;
     }
 
     .comeco{
@@ -48,7 +44,10 @@ body {
     margin-right: 100px;
     justify-content: center;
     text-align: left;
-   }
+    color: white;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+}
     h1 {
         font-size: 90px;
         margin-top: 0;
@@ -115,99 +114,32 @@ body {
    /* BOTOES  */
 nav {
     display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+
+}
+
+.btnDesign{
+    font-family: 'Voltaire', sans-serif;
+    height: max-content;
+    width: max-content;
+    margin-left: 5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: none;
+    background: none;
+    border: none;
+}
+.btnDesign:hover {
+    background-image: linear-gradient(99deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    cursor: pointer;
 }
    
-/* BOTAO SOBRE MIM */
 
-    #botaoSobreMim{
-    height: 100px;
-    width: 200px;
-    border-radius: 15px;
-    margin-left: 40px;
-    font-family: serif;
-    font-size: 30px;
-    background-color:white;
-    color: black;
-    border: 3px solid rgb(156, 156, 156);
-}
-    #botaoSobreMim:hover {
-        background-image: linear-gradient(99deg, red, blue);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white;
-        cursor: pointer;
-        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.349), 0 6px 20px 0 rgba(0, 0, 0, 0.603);
-    }
-
-/* BOTAO PROJETOS  */
-
-#botaoProjetos{
-    height: 100px;
-    width: 200px;
-    border-radius: 15px;
-    margin-left: 40px;
-    font-family: serif;
-    font-size: 30px;
-    background-color:white;
-    color: black;
-    border: 3px solid rgb(156, 156, 156);
-}
-    #botaoProjetos:hover {
-        background-image: linear-gradient(99deg, red, blue);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white;
-        cursor: pointer;
-        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.349), 0 6px 20px 0 rgba(0, 0, 0, 0.603);
-    }
-
-
-#botaoEstudos{
-    height: 100px;
-    width: 200px;
-    border-radius: 15px;
-    margin-left: 40px;
-    font-family: serif;
-    font-size: 30px;
-    background-color:white;
-    color: black;
-    border: 3px solid rgb(156, 156, 156);
-}
-    #botaoEstudos:hover {
-        background-image: linear-gradient(99deg, red, blue);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white;
-        cursor: pointer;
-        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.349), 0 6px 20px 0 rgba(0, 0, 0, 0.603);
-    }
-   
-
-#botaoCurriculo{
-    height: 100px;
-    width: 200px;
-    border-radius: 15px;
-    margin-left: 40px;
-    font-family: serif;
-    font-size: 30px;
-    background-color:white;
-    color: black;
-    border: 3px solid rgb(156, 156, 156);
-}
-    #botaoCurriculo:hover {
-        background-image: linear-gradient(99deg, red, blue);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        color: white;
-        cursor: pointer;
-        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.349), 0 6px 20px 0 rgba(0, 0, 0, 0.603);
-    }
-   
-   
 
 h4 {
     font-size: 50px;
@@ -236,3 +168,9 @@ h4 {
 .fotoicones{display: flex;
 flex-direction: column;
 margin-right: 15px;}
+
+
+a{
+    height: max-content;
+    width: max-content;
+}
