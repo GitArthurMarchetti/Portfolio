@@ -2,52 +2,87 @@ body{
     height: 100vh;
     width: 100vw;
     margin: 0;
-    overflow: hidden;
-    color: white;
+    overflow-x: hidden;
 }
 
-.fundo{
-    z-index: -1;
+.fotoIcones{
     position: absolute;
+    z-index: 1;
+    top: 23%;
+    left: 26.5%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.foto{
+    position:relative;
+    height: 340px;
+    background-color: #9E07F0;
+    border-radius: 50%;
+    padding: 8px;
+    transition: all 0.5s;
+}
+.foto:hover{
+        height: 350px;
+        padding: 10px;
+        background-color: #DAD3EE;
+        box-shadow: 0 0 80px #DAD3EE;
+        animation-name: colorir ;
+        animation-duration: 4s;
+    }
+
+    @keyframes colorir{
+        0% {
+            background-color: #edcaff;
+            box-shadow: 0 0 80px #edcaff;
+          }
+          25%{
+            background-color: #ffffff;
+            box-shadow: 0 0 80px #ffffff;
+          }
+          50% {
+            background-color: #d992ff;
+            box-shadow: 0 0 80px #d992ff;
+          }
+          75%{
+            background-color: #b52bff;
+            box-shadow: 0 0 80px #b52bff;
+          }
+          100% {
+            background-color: #dc9bff;
+            box-shadow: 0 0 80px #dc9bff;
+          }
+    }
+.parteRoxa{
+    background-color: #9E07F0;
     height: 100vh;
-    width: 100vw;
+    width: 40vw;
+}
+
+.telaInicial{
     display: flex;
     flex-direction: row;
 }
-.fundoVermelho{
-    background-color: #c00000;
+
+
+
+.partePreta{
     height: 100vh;
-    width: 45vw;
-}
-.fundoPreto{
-    background-color: #242424;
-    height: 100vh;
-    width: 55vw;
+    width: 60vw;
+    background-color: #1f1f1f;
+    color:#EEE7E4;
 }
 
-.hud{
-  border: white solid 2px;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-}
-
-/* BOTOES */
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
-a{
-  text-decoration: none;
-  color:wheat ;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
 }
 
-.btnDesign{
+ .btnDesign{
     margin-left: 6rem;
     font-size: 1.5rem;
     cursor: pointer;
@@ -55,7 +90,7 @@ a{
     width: max-content;
     height: max-content;
     border: none;
-    color: white;
+    color: #DAD3EE;
     font-family: 'Staatliches', cursive;
     transition: all 2s;
 }  .btnDesign::before {
@@ -66,38 +101,41 @@ a{
     content: '';
     width: 0%;
     height: 4px;
-    background: #c00000;
+    background: #9E07F0;
     display: block;
     transition: 0.5s;
   }
   
   .btnDesign:hover::after, button:hover::before {
     width: 100%;
+  } 
+
+  a{
+    text-decoration: none;
+    color: #EEE7E4;
   }
 
-
-.comeco{
+  .parteTitulo{
     display: flex;
-    flex-direction: row;
-    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    height: max-content;
+    width: max-content;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
-}
+  }
 
-.titulo{
-    font-size: 3rem;
-    color:wheat ;
-}
-  
-.fotoeicones{
-    height: 100px;
-}
-
-#github{
-    height: 100px;
-}
-
-#email{
-    height: 100px;
-}
+  h2{
+    font-size: 2rem;
+    margin: 0;
+  }
+  h1{
+    font-size: 4.5rem;
+    margin: 0;
+    align-self: center;
+  }
+  h3{
+    font-size: 2rem;
+    margin: 0;
+  }
