@@ -1,0 +1,103 @@
+.especialidadesArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: max-content;
+}
+
+.especialidadeConteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#tituloEspecialidades{
+    font-size: 45px;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    color: white;
+    background-color:#9E07F0 ;
+    padding: 10px;
+    padding-left: 80px;
+    padding-right:80px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+
+.MinhasEspecialidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.iconesEspe{
+    height: 70px;
+    filter: drop-shadow(0 0 15px purple);
+}
+
+#descricao{
+    color: white;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 3px;
+}
+
+.formacoesConteiner{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+#tituloFormacoes{
+    font-size: 45px;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    color: white;
+    background-color:#9E07F0 ;
+    padding: 10px;
+    padding-left: 120px;
+    padding-right:120px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+}
+
+.minhasFormacoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#iconesForm{
+    height: 100px;
+}

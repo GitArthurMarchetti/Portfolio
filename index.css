@@ -3,9 +3,10 @@ body{
     width: 100vw;
     margin: 0;
     overflow-x: hidden;
+    background-color: #1f1f1f;
 }
 
-
+                                  
 .fotoIcones{
     position: absolute;
     z-index: 1;
@@ -13,6 +14,7 @@ body{
     left: 26.5%;
     display: flex;
     flex-direction: column; 
+    align-items: center;
 }
 
 .foto{
@@ -23,6 +25,13 @@ body{
     padding: 8px;
     transition: all ease-in-out 0.5s;
 }
+.githubIcon{
+  opacity: 70%;
+}.githubIcon:hover{opacity: 100%;}
+.linkedinIcon{
+  opacity: 70%;
+}.linkedinIcon:hover{opacity: 100%;}
+
 .foto:hover{
         height: 350px;
         top: 1%;
@@ -56,7 +65,8 @@ body{
     }
 .parteRoxa{
     background-color: #9E07F0;
-    height: 100vh;
+    border-bottom-right-radius:205px;
+    height: 115vh;
     width: 40vw;
 }
 
@@ -75,7 +85,10 @@ body{
 }
 
 nav{
-  margin-top: 5px;
+    width: 100%;
+    height: max-content;
+    margin: auto; 
+    margin-top:10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -85,36 +98,21 @@ nav{
 }
 
  .btnDesign{
-    margin-left: 6rem;
-    font-size: 1.5rem;
+    margin-left: 5rem;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     background: none;
     width: max-content;
     height: max-content;
     border: none;
-    color: #DAD3EE;
     font-family: 'Staatliches', cursive;
-    transition: all 2s;
-}  .btnDesign::before {
-    margin-left: auto;
-  }
+ }
+ 
   
-  .btnDesign::after, button::before {
-    content: '';
-    width: 0%;
-    height: 4px;
-    background: #9E07F0;
-    display: block;
-    transition: 0.5s;
-  }
-  
-  .btnDesign:hover::after, button:hover::before {
-    width: 100%;
-  } 
-
   a{
     text-decoration: none;
-    color: #EEE7E4;
+    color: none;
   }
 
   .parteTitulo{
@@ -211,3 +209,224 @@ nav{
     color: #ffffff;
     background-color: #9e07f04f;
   }
+
+
+
+
+
+
+
+  /* AREA RESPONSIVO */
+
+
+  /*                   TELA 800 PIXELS ATÉ 1000                                    */
+  @media screen and (min-width: 800px) and  (max-width: 1000px){
+    .fotoIcones{
+      position: absolute;
+      z-index: 1;
+      top: 23%;
+      left: 20.5%;
+      display: flex;
+      flex-direction: column; 
+  }
+  .foto{
+    height: 500px;
+  }
+  .foto:hover{
+    height: 340px;
+  }
+  }
+
+/*  1000 PIXELS OU MAIS */
+  @media screen and (min-width: 1000px){
+
+    nav{
+      text-align: center;
+      align-items: center;
+    }
+
+    .btnDesign{
+      margin-left: 3.2rem;
+      margin-top: 5px;
+      font-size: 1.3rem;
+      color: rgb(255, 255, 255);
+      cursor: pointer;
+      background: none;
+      width: max-content;
+      height: 50px;
+      border: none;
+      font-family: 'Staatliches', cursive;
+      transition: all ease-in-out 0.5s;
+   }
+   
+   .btnDesign:hover{
+    background-color: #9E07F0;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    padding: 8px;
+   }
+   
+
+
+    .fotoIcones{
+      position: absolute;
+      z-index: 1;
+      top: 25%;
+      left: 20.5%;
+      display: flex;
+      flex-direction: column; 
+  }
+  .foto{
+    height: 350px;
+  }
+  .foto:hover{
+    height: 360px;
+  }
+
+  .parteTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    height: 80vh;
+    width: 40vw;
+    font-family: 'Reem Kufi Ink', sans-serif;
+  }
+
+
+  h2{
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  h1{
+    font-size: 4rem;
+    margin: 0;
+    align-self: center;
+  }
+
+  h3{
+    font-size: 2rem;
+    width:30rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  h3:nth-child(2){
+    animation: type2 0.5s steps(60, end);
+  }
+  
+  }
+
+
+/* 250 até 500 PIXELS */
+
+@media screen and (min-width: 250px) and (max-width: 500px){
+
+  body{
+    align-items: center;
+  }
+  .parteRoxa{
+    background-color: #9E07F0;
+    border-bottom-right-radius: 0px;
+    height: 30vh;
+    width: 500vw; 
+}
+
+.telaInicial{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.partePreta{
+    height: 100vh;
+    width: 100vw;
+    background-color: #1f1f1f;
+    color:#EEE7E4;
+}
+
+.fotoIcones{
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  align-self: center;
+  display: flex;
+  flex-direction: column; 
+}
+
+.foto{
+  position:relative;
+  height: 200px;
+  background-color: #9E07F0;
+  border-radius: 50%;
+  padding: 8px;
+  transition: all ease-in-out 0.5s;
+
+}
+.parteTitulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 20vh;
+  font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+h2{
+  font-size: 1rem;
+  margin: 0;
+}
+
+h1{
+  font-size: 2rem;
+  margin: 0;
+  align-self: center;
+}
+
+h3{
+  font-size: 1rem;
+  width:max-content;
+}
+h3:nth-child(2){
+  animation:none;
+}
+
+@keyframes type{ 
+  from { width: max-content; } 
+} 
+
+nav{
+  width: 100px;
+  margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+.btnDesign{
+  margin-left: 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: none;
+  width: max-content;
+  height: max-content;
+  border: none;
+  color: #DAD3EE;
+  font-family: 'Staatliches', cursive;
+  transition: all 2s;
+  text-decoration: underline solid #9E07F0 2px;
+}
+
+}
+
+
+  /* AREA RESPONSIVEL FINAL  */

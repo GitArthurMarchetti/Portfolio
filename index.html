@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Arthur</title>
 
-
+<!-- LINKS PARA CSS E JS -->
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="sobremim.css">
+    <link rel="stylesheet" href="especialidades.css">
 
+    <script src="index.js" defer></script>
+<!--  -->
+
+<!-- LINKS FONTES GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
@@ -17,14 +22,15 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+<!--  -->
 </head>
 <body>
 
 <div class="fotoIcones">
     <img src="imagens/fotoIlustrativaMacaco.png" alt="" class="foto">
     <div class="icones">
-        <img src="" alt="" class="githubIcon">
-        <img src="" alt="" class="linkedinIcon">
+        <a href="https://github.com/GitArthurMarchetti" target="_blank"><img src="imagens/githubBranco.png" alt="" class="githubIcon"></a>
+        <a href="https://www.linkedin.com/in/arthur-marchetti-9b4228249/" target="_blank"><img src="imagens/linkedinBranco.png" alt="" class="linkedinIcon"></a>
     </div>
 </div>
 
@@ -36,17 +42,20 @@
     <div class="partePreta">
         <nav>
             <!-- BOTOES -->
-            <button id="botaoSobreMim" class="btnDesign"> <a href="sobremim.html"> Sobre mim</a> </button>
+            <button id="botaoSobreMim" class="btnDesign"> Sobre mim</button>
             
+              <!-- BOTAO DE ESPECIALIDADE  -->
+              <button id="botaoProjetos" class="btnDesign">  Especialidades </a></button>
+
                 <!-- BOTAO DE PROJETOS  -->
-                 <button id="botaoProjetos" class="btnDesign">  <a href="projetos.html">  Projetos </a></button>
+                 <button id="botaoProjetos" class="btnDesign">  Projetos </a></button>
                 
                     <!-- BOTAO ESTUDOS  -->
-                <button id="botaoEstudos" class="btnDesign"><a href="cronograma.html"> Cronograma </a> </button>
+                <button id="botaoEstudos" class="btnDesign"> Cronograma</button>
                 
                 
                 <!-- BOTAO CURRICULO  -->
-                <button id="botaoCurriculo" class="btnDesign"><a href="curriculo.html"> Curriculo </a></button>
+                <button id="botaoCurriculo" class="btnDesign">Curriculo</button>
 
         </nav>
 
@@ -59,6 +68,61 @@
   
     </div>
 </section>
-<section>aaaaa</section>
+
+<!-- PARTE SOBRE MIM -->
+<section class="sobreMimArea">
+<div class="sobreMimTexto">
+    <span class="tituloSobremim">Quem é<span id="meuNome2"> Arthur Marchetti?</span></span>
+
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet mollis purus, et ornare purus aliquam eget. Aliquam erat volutpat. Suspendisse potenti. Phasellus fringilla odio sed fermentum interdum. Quisque libero diam, varius sit amet dapibus consectetur, tempus consequat massa. Quisque dictum felis id lorem efficitur molestie. Donec imperdiet at dui quis aliquet. Ut sed augue arcu. Nullam placerat a velit sit amet imperdiet. Etiam pretium  </p>
+
+    <button class="saberMais"><a href="">Saber mais...</a></button>
+</div>
+
+<div class="areaFotoSobremim">
+    <img src="imagens/fotoIlustrativaMacaco.png" alt="Foto minha" class="fotoSobremim">
+</div>
+</section>
+<!--  -->
+
+<!-- PARTE MINHAS ESPECIALIDADES -->
+<section class="especialidadesArea">
+    <div class="especialidadeConteiner">
+        <span id="tituloEspecialidades">Especialidades</span>
+        <div class="MinhasEspecialidades">
+            <div class="especialidades">
+                <img src="imagens/html-5.png" alt="html" class="iconesEspe">
+           <p id="descricao">HTML</p>
+            </div>
+            <div class="especialidades" id="iconesEspeForm">
+                <img src="imagens/css-3.png" alt="css" class="iconesEspe">
+           <p id="descricao">CSS</p>
+            </div>
+            <div class="especialidades" id="iconesEspeForm">
+                <img src="imagens/js.png" alt="javascript" class="iconesEspe">
+           <p id="descricao">JavaScript</p>
+            </div>
+        </div>
+    </div>
+    <div class="formacoesConteiner">
+        <span id="tituloFormacoes">Formações</span>
+        <div class="minhasFormacoes">
+            <div class="formacoes">
+                <img src="imagens/senai-logo.svg" alt="senai" id="iconesForm">
+                <p id="descricao">SENAI - Escola Técnica TI </p>
+            </div>
+            <div class="formacoes" id="iconesEspeForm">
+                <img src="imagens/rockfeller-logoHC1.png" alt="rockfeller">
+                <p id="descricao">Inglês Avançado - Rockfeller</p>
+            </div>
+            <div class="formacoes" id="iconesEspeForm">
+                <img src="" alt="alura">
+                <p id="descricao">Certificados Alura Online</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
     </body>
 </html>
