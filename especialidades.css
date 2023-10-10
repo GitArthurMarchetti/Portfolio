@@ -67,7 +67,6 @@
 }
 
 .formacoesConteiner{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,8 +95,38 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+}
+.formacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    margin: auto;
 }
 
-#iconesForm{
+#iconeSenai{
     height: 100px;
+    margin: auto;
+    filter: drop-shadow(0 0 15px purple);
+}
+#iconeRock{
+    height: 40px;
+    width: 200px ;
+    margin: auto;
+    filter: drop-shadow(0 0 15px purple);
+}
+
+#iconeAlura{
+    height: 100px;
+    filter: drop-shadow(0 0 15px purple);
+    margin: auto;
 }

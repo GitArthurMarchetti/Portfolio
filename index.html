@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="sobremim.css">
     <link rel="stylesheet" href="especialidades.css">
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="stylesheet" href="cronograma.css">
 
     <script src="index.js" defer></script>
 <!--  -->
@@ -22,6 +24,10 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
 <!--  -->
 </head>
 <body>
@@ -29,8 +35,8 @@
 <div class="fotoIcones">
     <img src="imagens/fotoIlustrativaMacaco.png" alt="" class="foto">
     <div class="icones">
-        <a href="https://github.com/GitArthurMarchetti" target="_blank"><img src="imagens/githubBranco.png" alt="" class="githubIcon"></a>
-        <a href="https://www.linkedin.com/in/arthur-marchetti-9b4228249/" target="_blank"><img src="imagens/linkedinBranco.png" alt="" class="linkedinIcon"></a>
+        <a href="https://github.com/GitArthurMarchetti" target="_blank"><img src="imagens/githubBranco.png" alt="" class="githubIcon"  id="github"></a>
+        <a href="https://www.linkedin.com/in/arthur-marchetti-9b4228249/" target="_blank"><img src="imagens/linkedinBranco.png" alt="" class="linkedinIcon" id="linkedin"></a>
     </div>
 </div>
 
@@ -76,7 +82,7 @@
 
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet mollis purus, et ornare purus aliquam eget. Aliquam erat volutpat. Suspendisse potenti. Phasellus fringilla odio sed fermentum interdum. Quisque libero diam, varius sit amet dapibus consectetur, tempus consequat massa. Quisque dictum felis id lorem efficitur molestie. Donec imperdiet at dui quis aliquet. Ut sed augue arcu. Nullam placerat a velit sit amet imperdiet. Etiam pretium  </p>
 
-    <button class="saberMais"><a href="">Saber mais...</a></button>
+    <button class="saberMais" onclick="sobremimPagina()">Saber mais...</button>
 </div>
 
 <div class="areaFotoSobremim">
@@ -108,21 +114,54 @@
         <span id="tituloFormacoes">Formações</span>
         <div class="minhasFormacoes">
             <div class="formacoes">
-                <img src="imagens/senai-logo.svg" alt="senai" id="iconesForm">
+                <img src="imagens/senaiLogo.png" alt="senai" id="iconeSenai">
                 <p id="descricao">SENAI - Escola Técnica TI </p>
             </div>
-            <div class="formacoes" id="iconesEspeForm">
-                <img src="imagens/rockfeller-logoHC1.png" alt="rockfeller">
+            <div class="formacoes" >
+                <img src="imagens/rockfeller-logoHC1.png" alt="rockfeller" id="iconeRock">
                 <p id="descricao">Inglês Avançado - Rockfeller</p>
             </div>
-            <div class="formacoes" id="iconesEspeForm">
-                <img src="" alt="alura">
+            <div class="formacoes">
+                <img src="imagens/aluraLogo.png" alt="alura"  id="iconeAlura">
                 <p id="descricao">Certificados Alura Online</p>
             </div>
         </div>
     </div>
 </section>
+<!--  -->
 
+<!-- PARTE PROJETOS -->
+<section class="projetosArea">
+    <span class="tituloProjetos">Meus projetos:</span>
+    <div class="projetosConteiner">
+        <div class="arrobaArea">
+            <img src="imagens/githubBranco.png" alt="" class="iconeProjeto" id="github">
+            <p id="arroba">&#64;ArthurMarchetti</p>
+            <img src="imagens/linkedinBranco.png" alt="" class="iconeProjeto" id="linkedin">
+        </div>
+        <div class="projetos">
+            <div class="projeto">
+                <a href=""><img src="" alt=""></a>
+            </div>
+            <div class="projeto">
+               <a href=""><img src="" alt=""></a>
+            </div>
+            <div class="projeto">
+               <a href=""><img src="" alt=""></a> 
+            </div>
+        </div>
+        <button onclick="paginaProjetos()" class="buttonProjeto">Clique aqui para ver mais</button>
+    </div>
+</section>
+<!--  -->
 
+<!-- PARTE CRONOGRAMA -->
+<section class="cronogramaArea">
+    <span class="tituloCronograma">Meu Cronograma:</span>
+    <div class="cronogramaEspaco">
+        <img src="imagens/cronograma.png" alt="" class="cronograma">
+    </div>
+</section>
+<!--  -->
     </body>
 </html>
