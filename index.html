@@ -7,11 +7,12 @@
     <title>Portfólio Arthur</title>
 
 <!-- LINKS PARA CSS E JS -->
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="sobremim.css">
-    <link rel="stylesheet" href="especialidades.css">
-    <link rel="stylesheet" href="projetos.css">
-    <link rel="stylesheet" href="cronograma.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/sobremim.css">
+    <link rel="stylesheet" href="CSS/especialidades.css">
+    <link rel="stylesheet" href="CSS/projetos.css">
+    <link rel="stylesheet" href="CSS/cronograma.css">
+    <link rel="stylesheet" href="CSS/footer.css">
 
     <script src="index.js" defer></script>
 <!--  -->
@@ -19,24 +20,30 @@
 <!-- LINKS FONTES GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+<!--  -->
+<!-- LINKS ICONES GOOGLE-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <!--  -->
 </head>
 <body>
 
 <div class="fotoIcones">
-    <img src="imagens/fotoIlustrativaMacaco.png" alt="" class="foto">
+    <img src="imagens/fotoMinha.png" alt="" class="foto">
     <div class="icones">
         <a href="https://github.com/GitArthurMarchetti" target="_blank"><img src="imagens/githubBranco.png" alt="" class="githubIcon"  id="github"></a>
         <a href="https://www.linkedin.com/in/arthur-marchetti-9b4228249/" target="_blank"><img src="imagens/linkedinBranco.png" alt="" class="linkedinIcon" id="linkedin"></a>
+        <a href=" https://wa.me/+5548991700685" target="_blank"><img src="/imagens/whatzapBanco.png" alt="" class="whatsapp"></a>
     </div>
 </div>
 
@@ -48,20 +55,24 @@
     <div class="partePreta">
         <nav>
             <!-- BOTOES -->
-            <button id="botaoSobreMim" class="btnDesign"> Sobre mim</button>
+            <button id="botaoSobreMim" class="btnDesign" onclick="scrollToSection('sobreMimArea')"> Sobre mim</button>
             
               <!-- BOTAO DE ESPECIALIDADE  -->
-              <button id="botaoProjetos" class="btnDesign">  Especialidades </a></button>
+              <button id="botaoProjetos" class="btnDesign" onclick="scrollToSection('especialidadesArea')">  Especialidades </a></button>
 
                 <!-- BOTAO DE PROJETOS  -->
-                 <button id="botaoProjetos" class="btnDesign">  Projetos </a></button>
+                 <button id="botaoProjetos" class="btnDesign" onclick="scrollToSection('projetosArea')">  Projetos </a></button>
                 
                     <!-- BOTAO ESTUDOS  -->
-                <button id="botaoEstudos" class="btnDesign"> Cronograma</button>
+                <button id="botaoEstudos" class="btnDesign" onclick="scrollToSection('cronogramaArea')"> Cronograma</button>
                 
-                
+                <!-- BOTAO CONTATO -->
+                <button id="botaoContato" class="btnDesign" onclick="scrollToSection('contatoArea')">Contate-me!</button>
+
                 <!-- BOTAO CURRICULO  -->
-                <button id="botaoCurriculo" class="btnDesign">Curriculo</button>
+                <a href="" download><button id="botaoCurriculo" class="btnDesign"><span class="material-symbols-outlined">
+                    download
+                    </span>Curriculo</button></a>
 
         </nav>
 
@@ -76,23 +87,24 @@
 </section>
 
 <!-- PARTE SOBRE MIM -->
-<section class="sobreMimArea">
+
+<section id="sobreMimArea">
 <div class="sobreMimTexto">
     <span class="tituloSobremim">Quem é<span id="meuNome2"> Arthur Marchetti?</span></span>
 
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla laoreet mollis purus, et ornare purus aliquam eget. Aliquam erat volutpat. Suspendisse potenti. Phasellus fringilla odio sed fermentum interdum. Quisque libero diam, varius sit amet dapibus consectetur, tempus consequat massa. Quisque dictum felis id lorem efficitur molestie. Donec imperdiet at dui quis aliquet. Ut sed augue arcu. Nullam placerat a velit sit amet imperdiet. Etiam pretium  </p>
+   <p>Olá! Meu nome é Arthur, e aos meus 16 anos, estou no segundo ano do curso técnico em Tecnologia da Informação no Senai de Florianópolis, minha cidade natal. Meu cotidiano gira em torno do estudo e prática em TI, com um foco especial em Desenvolvimento Web. Meu sonho? Tornar-me um programador de sucesso. Quer conhecer mais sobre minha jornada e paixão por tecnologia? Clique no botão abaixo para descobrir! </p>
 
     <button class="saberMais" onclick="sobremimPagina()">Saber mais...</button>
 </div>
 
 <div class="areaFotoSobremim">
-    <img src="imagens/fotoIlustrativaMacaco.png" alt="Foto minha" class="fotoSobremim">
+    <img src="imagens/fotoMinha2.PNG" alt="Foto minha" class="fotoSobremim">
 </div>
 </section>
 <!--  -->
 
 <!-- PARTE MINHAS ESPECIALIDADES -->
-<section class="especialidadesArea">
+<section id="especialidadesArea">
     <div class="especialidadeConteiner">
         <span id="tituloEspecialidades">Especialidades</span>
         <div class="MinhasEspecialidades">
@@ -131,23 +143,25 @@
 <!--  -->
 
 <!-- PARTE PROJETOS -->
-<section class="projetosArea">
+<section id="projetosArea">
     <span class="tituloProjetos">Meus projetos:</span>
     <div class="projetosConteiner">
         <div class="arrobaArea">
-            <img src="imagens/githubBranco.png" alt="" class="iconeProjeto" id="github">
+            <a href="https://github.com/GitArthurMarchetti" target="_blank"> <img src="imagens/githubBranco.png" alt="" class="iconeProjeto" id="github"></a>
             <p id="arroba">&#64;ArthurMarchetti</p>
-            <img src="imagens/linkedinBranco.png" alt="" class="iconeProjeto" id="linkedin">
+            <a href="https://www.linkedin.com/in/arthur-marchetti-9b4228249/" target="_blank"><img src="imagens/linkedinBranco.png" alt="" class="iconeProjeto" id="linkedin"></a>
         </div>
         <div class="projetos">
             <div class="projeto">
-                <a href=""><img src="" alt=""></a>
+                <a href="https://gitarthurmarchetti.github.io/login_e_senha/" target="_blank"><img src="/imagens/fotoProjetoLogin.jpg" alt="" class="imagemProjeto"></a>
+                <p class="descricaoFoto">Sistema de login e cadastro</p>
             </div>
             <div class="projeto">
-               <a href=""><img src="" alt=""></a>
+               <a href=""><img src="" alt="" class="imagemProjeto"></a>
             </div>
             <div class="projeto">
-               <a href=""><img src="" alt=""></a> 
+               <a href="https://psicologa-infantil.netlify.app" target="_blank"><img src="imagens/fotoProjetoPsicologa.jpg" alt="" class="imagemProjeto"></a> 
+               <p class="descricaoFoto">Pagina para Psicologa</p>
             </div>
         </div>
         <button onclick="paginaProjetos()" class="buttonProjeto">Clique aqui para ver mais</button>
@@ -156,12 +170,49 @@
 <!--  -->
 
 <!-- PARTE CRONOGRAMA -->
-<section class="cronogramaArea">
+<section id="cronogramaArea">
     <span class="tituloCronograma">Meu Cronograma:</span>
     <div class="cronogramaEspaco">
         <img src="imagens/cronograma.png" alt="" class="cronograma">
     </div>
 </section>
 <!--  -->
+
+<!-- FINALIZAÇÂO -->
+<footer>
+
+    <section class="areaEmail">
+        <form action="https://formsubmit.co/avinhasmarchetti@gmail.com" method="post" class="card">
+         <p id="cm">Contate-me: </p>
+            <label for="inputNome" class="nes"></label>
+            
+            <input type="text" id="inputNome" name="name" placeholder="Seu Nome" required maxlength="25" minlength="2" required>
+            
+            <span></span>
+
+            <label for="inputEmail" class="ede"></label>
+           
+            <input type="email" id="inputEmail" placeholder="Seu Email" name="email" required maxlength="50" required>
+
+            <span></span>
+
+            <label for="textAreaMensagem" class="m"></label>
+            
+            <textarea name="mensagem" id="textAreaMensagem" placeholder="Escreva uma mensagem" required maxlength="100" class="mensagem" required></textarea>
+            
+
+            <button class="button-msg" type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <section id="contatoArea">
+        <div class="contatos">
+            <a href="https://github.com/GitArthurMarchetti" target="_blank"><img src="/imagens/githubBranco.png" alt="" class="githubContato"></a>
+            <a href="https://www.linkedin.com/in/arthur-marchetti-9b4228249/" target="_blank"> <img src="/imagens/linkedinBranco.png" alt="" class="linkedinContato"></a>
+            <a href=" https://wa.me/+5548991700685" target="_blank"><img src="/imagens/whatzapBanco.png" alt="" class="whatsapp"></a>
+        </div>
+        <p id="arrobaDois">2023&copy;ArthurMarchetti</p>
+    </section>
+</footer>
     </body>
 </html>
