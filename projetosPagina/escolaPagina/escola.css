@@ -63,16 +63,23 @@ nav{
 }
 
 .btnDesign{
-    font-size: 20px;
     display: flex;
-    background-color: rgb(66, 66, 66);
-    color: white;
-    padding: 20px;
-    font-family: 'Reem Kufi Ink', sans-serif;
-    border:#9E07F0 5px solid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
     cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    justify-content: space-evenly;
+    border: none;
+    margin-bottom: 10px;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    transition: all 0.5s;
 }.btnDesign:hover{
     background-color: rgb(255, 255, 255);
     color: #9E07F0;
@@ -89,3 +96,55 @@ nav{
     font-family: 'Reem Kufi Ink', sans-serif;
 }
 
+.espaco{
+    width: 80vw;
+    height: max-content;
+    padding: 20px;
+    background-color: rgb(68, 68, 68);
+    border: #9E07F0 3px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.espacoAtv{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    border-bottom: 2px solid rgb(94, 94, 94);
+    padding: 5px;
+}
+
+.areaTexto{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px;
+    padding-left: 50px;
+}
+
+.tituloProjetos{
+    font-size: 22px;
+    color: white; 
+    height: max-content;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    background-color: #9E07F0;
+    width: max-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+}
+
+.descricaoAtv{
+    color: white;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.imagemAtv{
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+
+a{
+    color: rgb(147, 147, 255);
+}
