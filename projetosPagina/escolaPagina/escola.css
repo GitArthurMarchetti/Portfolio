@@ -7,8 +7,6 @@ body{
 }
 
 .btnVoltar{
-    position: sticky;
-    top: 5px;
     align-items: center;
     align-self: center;
     text-align: center;
@@ -24,6 +22,70 @@ body{
     background-color: rgb(165, 165, 165);
     border: none;
     transition: all 0.5s;
+    position:sticky;
+    top: 0;
 }.btnVoltar:hover{
     background-color: #9E07F0;
 }
+
+section{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    width: 80vw;
+    height: max-content;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1{
+    font-size: 3rem;
+    background-color: rgb(66, 66, 66);
+    text-decoration: underline 3px white;
+    text-underline-offset: 0.4rem;
+    width: max-content;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.btnDesign{
+    font-size: 20px;
+    display: flex;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 20px;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    border:#9E07F0 5px solid;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}.btnDesign:hover{
+    background-color: rgb(255, 255, 255);
+    color: #9E07F0;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#descricao{
+    font-size:2em;
+    color: white;
+    margin-top: 100px;
+    text-decoration: underline 2px;
+    text-underline-offset: 0.1rem; 
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+

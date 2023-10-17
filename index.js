@@ -10,21 +10,22 @@ function scrollToSection(sectionId) {
   }
 
   function sobremimPagina(){
-    window.location.href = "/sobremimPagina/sobremim.html";
+    window.location.href = "sobremimPagina/sobremim.html";
+  }
+
+  
+  function paginaProjetos(){
+    window.location.href = "projetosPagina/projetosP.html";
   }
 
   function voltarInicio(){
     window.location.href = "../index.html";
   }
 
-  function paginaProjetos(){
-    window.location.href = "/projetosPagina/projetosP.html";
-  }
-
   function projetosEscola(){
-    window.location.href = "escolaPagina/escola.html";
+    window.location.href = "escolaPagina/escola.html"
   }
 
   function voltarPagina(){
-    history.go(-1);
+    history.back();
   }

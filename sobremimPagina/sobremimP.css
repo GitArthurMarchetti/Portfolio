@@ -85,6 +85,12 @@ a{
     width: 300px;
     animation: float 2.5s ease-in-out infinite;
     transition: all 0.5s;
+    background-color: rgb(68, 68, 68);
+    padding: 20px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 130px;
 }.foto:hover{
     animation:float 0.2s ease-in-out infinite; ;
     cursor: grab;
@@ -117,11 +123,11 @@ a{
 }
 
 .githubIcon{
-    opacity: 70%;
+    opacity: 50%;
     cursor: pointer;
   }.githubIcon:hover{opacity: 100%;}
   .linkedinIcon{
-    opacity: 70%;
+    opacity: 50%;
     cursor: pointer;
   }.linkedinIcon:hover{opacity: 100%;}
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos Escolares</title>
     <link rel="stylesheet" href="escola.css">
-    <script src="/index.js"></script>
+    <script src="../../index.js" defer></script>
+    <script src="escola.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,19 +29,31 @@
             </span></button>
     </div>
 
-    <section>
+<section>
         <h1>Projetos Escolares:</h1>
-    </section>
-
+  
+    <p id="descricao">Escolha a matéria a ser apresentada:</p>
     <nav>
-        <div class="btnDesign" id="btnMtm">Matemática</div>
-        <div class="btnDesign" id="btnHum">Humanas</div>
-        <div class="btnDesign" id="btnNat">Natureza</div>
-        <div class="btnDesign" id="btnLin">Linguagens</div>
+        <!-- MATEMATICA -->
+        <div class="btnDesign" id="btnMtm" onclick="matematica()">Matemática</div>
+        
+        <!-- HUMANAS -->
+        <div class="btnDesign" id="btnHum" onclick="humanas()">Humanas</div>
+        
+        <!-- NATUREZA -->
+        <div class="btnDesign" id="btnNat" onclick="natureza()">Natureza</div>
+        
+        <!-- LINGUAGENS -->
+        <div class="btnDesign" id="btnLin" onclick="linguagens()">Linguagens</div>
+     
     </nav>
 
-    <div class="areaExplicacao">
-        
-    </div>
+    <div id="areaExplicacao">
+        <div class="espacoMatematica">
+            
+        </div>
+    </div> 
+
+ </section>
 </body>
 </html>
