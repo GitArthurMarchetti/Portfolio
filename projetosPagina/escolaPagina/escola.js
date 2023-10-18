@@ -178,3 +178,8 @@ function tecnico(){
      areaVazia.innerHTML = "";
 }
 }
+
+
+function extrasPagina(){
+    window.location.href = "extras/extras.html";
+}
