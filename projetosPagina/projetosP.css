@@ -71,6 +71,9 @@ h1{
     height: 300px;
     width: 300px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btnEscola{
@@ -93,4 +96,13 @@ h1{
     transition: all 0.5s;
 }.btnEscola:hover{
     background-color: #9E07F0;
+}
+
+.foto{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    opacity: 70%;
+}.foto:hover{
+    opacity: 100%;
 }

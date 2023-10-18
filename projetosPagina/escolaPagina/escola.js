@@ -12,6 +12,14 @@ function matematica(){
         </div>
     </div>
 </div>
+<div class="espacO">
+<div class="espacoAtv">
+    <img src="../../imagens/entrevistaFoto.jpg" alt="" class="imagemAtv">
+    <div class="areaTexto">
+        <p class="tituloProjetos">Entrevista sobre profissões</p>
+        <p class="descricaoAtv"> Fizemos um video atuado sobre um interrogatorio com a nossa professora de Natureza. <br> LINK: <a href="https://www.youtube.com/watch?v=gMdsXMw-J8o" target="_blank">Abrir o canva.</a></p>
+    </div>
+</div>
 <div class="espacoMatematica">
     <div class="espacoAtv">
         <img src="../../imagens/fotoIlustrativaMacaco.png" alt="" class="imagemAtv">
@@ -25,6 +33,7 @@ function matematica(){
                 provident quas cumque?</p>
         </div>
     </div>
+</div>
 </div>
     ` )
    } else{
@@ -52,7 +61,7 @@ function humanas(){
                 <p class="descricaoAtv"> Fizemos um canva que mostra a evolução de um local, escolhemos o morro da cruz. <br> LINK: <a href="https://www.canva.com/design/DAFqNyjP55I/H5bwhRontekhZSl4ZXsQeQ/edit?utm_content=DAFqNyjP55I&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Abrir o canva.</a></p>
             </div>
         </div>
-    </div`
+    </div>`
         )
 }else{
     areaVazia.innerHTML = "";
@@ -99,7 +108,73 @@ else{
 }
 }
 
-function linguagens(){
+ function linguagens(){
+     if(areaVazia.innerHTML === "") {
+         areaVazia.insertAdjacentHTML("afterbegin", `
+         <div class="espacO">
+         <div class="espacoAtv">
+             <img src="../../imagens/cultura.jpg" alt="" class="imagemAtv">
+             <div class="areaTexto">
+                 <p class="tituloProjetos">Jornal da turma</p>
+                 <p class="descricaoAtv"> Criamos um jornal onde tem noticias da cultura nerd nele, e pós isso juntamos todos os trabalhos para fazer um jornal de todas as notivias
+                     <br> LINK: <a href="https://docs.google.com/document/d/1PAMJnaLtV7t8n8h96FX1KDrjtKRBauH-izIVCaiR1O0/edit?usp=sharing" target="_blank">Abrir jornal</a></p>
+             </div>
+         </div>
+     </div>
+`)
+ }else{
+    areaVazia.innerHTML = "";
+}
+}
+
+function tecnico(){
     if(areaVazia.innerHTML === "") {
-        areaVazia.insertAdjacentHTML("afterbegin",
+        areaVazia.insertAdjacentHTML("afterbegin", `
+         <div class="espacO">
+                <div class="espacoAtv">
+                    <img src="../../imagens/tempFoto.jpg" alt="" class="imagemAtv">
+                    <div class="areaTexto">
+                        <p class="tituloProjetos">Lógica da Programação:  <br> Convertor de temperatura em JS</p>
+                        <p class="descricaoAtv"> Criamos em HTML e JS um convertor de temperatura, ex: Celcius para Fahrenheit e vice-versa.
+                            <br> LINK: <a href="../../Arquivos/temperatura.zip" download="../../Arquivos/temperatura.zip">BAIXAR arquivo .zip</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="espacO">
+                <div class="espacoAtv">
+                    <img src="../../imagens/multi-paginas.jpg" alt="" class="imagemAtv">
+                    <div class="areaTexto">
+                        <p class="tituloProjetos">Lógica da Programação:  <br>
+                            Atividade multi-paginas</p>
+                        <p class="descricaoAtv"> Criamos em HTML e JS um sistema de mudar de pagina quando clicar em um botão, o mesmo sistema usado aqui no portfólio.
+                            <br> LINK: <a href="../../Arquivos/multi-paginas.zip" download="../../Arquivos/multi-paginas.zip">BAIXAR arquivo .zip</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="espacO">
+                <div class="espacoAtv">
+                    <img src="../../imagens/portugolFoto.jpg" alt="" class="imagemAtv">
+                    <div class="areaTexto">
+                        <p class="tituloProjetos">Lógica da Computação:  <br>
+                            Lista de algoritmos feito em Portugol Studio</p>
+                        <p class="descricaoAtv"> Em Portugol Studio, um programa que serve para testar a lógica em programção de iniciantes, fizemos mais de 80 exercicios. (Obs: o docs no link é uma das 6 listas).
+                            <br> LINK: <a href="https://docs.google.com/document/d/1nEKy9Mrqyg1bXz5p3_9YF9Lf9rLs2IleFS5lJ6CjXIw/edit?usp=sharing" target="_blank">Abrir documento google</a></p>
+                    </div>
+                </div>
+                <div class="espacO">
+                    <div class="espacoAtv">
+                        <img src="../../imagens/visualGfoto.jpg" alt="" class="imagemAtv">
+                        <div class="areaTexto">
+                            <p class="tituloProjetos">Lógica da Computação:  <br>
+                                Lista de algoritmos feito em VisualG</p>
+                            <p class="descricaoAtv"> Em VisualG, um programa que serve para testar a lógica em programção de intermediarios, fizemos mais de 50 exercicios. (Obs: o docs no link é uma das muitas listas).
+                                <br> LINK: <a href="https://docs.google.com/document/d/1kDyMrZ2rvy5-sdQYseaOnxnvfvkFZjgzcdWgsHHmHgY/edit?usp=sharing" target="_blank">Abrir documento google</a></p>
+                        </div>
+                    </div>
+            </div>
+        `)
+}else{ 
+     areaVazia.innerHTML = "";
+}
 }
