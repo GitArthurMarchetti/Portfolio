@@ -121,6 +121,24 @@ else{
              </div>
          </div>
      </div>
+       <div class="espacO">
+                <div class="espacoAtv">
+                    <img src="../../imagens/redacaoPrimeiro.jpg" alt="" class="imagemAtv">
+                    <div class="areaTexto">
+                        <p class="tituloProjetos">Redação Primeiro trimestre</p>
+                        <p class="descricaoAtv">Fizemos uma redação online, minha nota foi 760.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="espacO">
+                <div class="espacoAtv">
+                    <img src="../../imagens/redacao.jpg" alt="" class="imagemAtv">
+                    <div class="areaTexto">
+                        <p class="tituloProjetos">Redação Terceiro trimestre</p>
+                        <p class="descricaoAtv">Fizemos uma redação online, minha nota foi 720.</a></p>
+                    </div>
+                </div>
+            </div>
 `)
  }else{
     areaVazia.innerHTML = "";
