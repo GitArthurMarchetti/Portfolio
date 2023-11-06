@@ -126,6 +126,15 @@ transition: all 0.5s;
     filter: drop-shadow(0px 0px 10px rgb(0, 255, 85));
 }
 
+.areaQrcode{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 300px;
+    justify-content: space-between;
+    margin: auto;
+}
+
 /* MOBILE  XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXXXXXXXXXXXXXXXXXX */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
@@ -223,7 +232,7 @@ transition: all 0.5s;
         display: flex;
         flex-direction: column;
         width: max-content;
-        height: 200px;
+        height: 300px;
         border-radius: 30px;
         padding: 20px;
         margin-top: auto;
@@ -260,5 +269,15 @@ transition: all 0.5s;
     }.whatsapp:hover{
         opacity: 100%;
         filter: drop-shadow(0px 0px 10px rgb(0, 255, 85));
+    }
+
+    .areaQrcode{
+        margin-top: 1000px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        width: 300px;
+        justify-content: space-between;
+        margin: auto;
     }
 }
