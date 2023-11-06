@@ -191,6 +191,24 @@ function tecnico(){
                         </div>
                     </div>
             </div>
+            <div class="espacO">
+                <div class="espacoAtv">
+                    <img src="../../imagens/fotoCertificadoPython.jpg" alt="" class="imagemAtv">
+                    <div class="areaTexto">
+                        <p class="tituloProjetos">Lógica da Computação: <br> Certificado Python</p>
+                        <p class="descricaoAtv">Por uma olimpíadas, nós em sala de aula fizemos um curso iniciante de Python, aprendi o básico.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="espacO">
+            <div class="espacoAtv">
+                <img src="../../imagens/certificadoCybersegurança.jpg" alt="" class="imagemAtv">
+                <div class="areaTexto">
+                    <p class="tituloProjetos">Fundamentos de Tecnologia da Informação <br> Certificado Cybersegurança</p>
+                    <p class="descricaoAtv">Por uma olimpíadas, nós em sala de aula fizemos um curso iniciante de Cybersegurança, aprendi o básico.</p>
+                </div>
+            </div>
+        </div>
         `)
 }else{ 
      areaVazia.innerHTML = "";
