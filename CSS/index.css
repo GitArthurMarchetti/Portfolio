@@ -238,7 +238,12 @@ nav{
     align-items: center;
 }
 
-                                  
+.areaQrCodePort{
+  display: none; flex-direction: column; width: max-content;  margin: 20px;  background-color: rgb(45, 1, 87); padding: 10px; border-radius: 20px;
+  width: 80px;
+  padding-bottom: 1px;
+}
+
 .fotoIcones{
     position: absolute;
     z-index: 1;
